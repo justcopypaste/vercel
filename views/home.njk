@@ -1,0 +1,12 @@
+<form action="/frutas" method="POST">
+    <input type="text" name="fruta"></input>
+    <button type="submit">Enviar<button>
+</form>
+
+<ul>
+    {% for item in frutas %}
+        <li>{{item}}</li>
+    {%else%}
+        <li>No hay frutas</li>
+    {%endfor%}
+</ul>
